@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Image Captioning">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='nicepage.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" media="screen">
+    
+    
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.6.5, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/aicamplogo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode"><header class="u-grey-80 u-clearfix u-header u-header" id="sec-6eab"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="128" data-image-height="130">
+          <img 
+               src="{{ url_for('static', filename='images/aicamplogo.png')}}"
+               class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-black u-custom-menu u-nav-container">
+            <ul class="u-black u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 20px;">Home</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header> 
+    <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="640" data-image-height="960" id="sec-b61f">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-title u-text-1">Image Captioning</h1>
+        <p class="u-large-text u-text u-text-default u-text-variant u-text-2">Upload an image here and this app will generate a caption for this image</p>
+        
+   
+        
+                        <a class="u-btn u-button-style u-palette-2-base u-btn-1" href='#' id='seefood_button'>
+                    <form id='seefood_form' method=post enctype=multipart/form-data>
+                        <input id="seefood_input_field" name="file" type="file" onchange="this.form.submit();" hidden/>
+                    </form>
+                    upload your picture here
+                </a>
+        
+        
+        
+        
+<!--         <a href="#" class="u-btn u-button-style u-palette-2-base u-btn-1">Upload your image here</a> -->
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-2" id="sec-a878">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1"><b>Motivations</b>
+          <br>
+        </h1>
+        <p class="u-text u-text-default u-text-2"><b style="color: rgba(0, 0, 0, 0);">For any given image from a user, the web app will output a description of&nbsp; the event of the image.&nbsp;</b>
+          <br>
+        </p>
+        <p class="u-text u-text-default u-text-3">For any given image from a user, the web app will output a description of&nbsp; the event of the image.&nbsp;</p>
+        <h1 class="u-text u-text-default u-text-4"><b>Dataset&nbsp;</b>
+        </h1>
+        <p class="u-text u-text-default u-text-5">Images are from the flickr8k dataset and captions are from <a href="https://www.kaggle.com/aladdinpersson/flickr8kimagescaptions" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">https://www.kaggle.com/aladdinpersson/flickr8kimagescaptions</a>&nbsp;<br>
+          <br>There are 8091 images, and each image has 5 captions. These captions act as labels for the images. There are 8091x5 = 40,455 captions which have 8761 words in total.&nbsp;<br>For example, the left below shows an image whose file name is “1000268201_693b08cb0e.jpg”, the right below shows the five captions for this image.&nbsp;
+        </p>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-17 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <img class="u-image u-image-default u-image-1"
+                       src="{{ url_for('static', filename='images/ScreenShot2022-03-19at4.28.38PM1.png')}}"
+                       
+                       alt="" data-image-width="610" data-image-height="812">
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-43 u-layout-cell-2">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <p class="u-text u-text-default u-text-6"><b>
+                      <span style="font-weight: 400; font-size: 1.5rem;">1. 'child in pink dress is climbing up set of stairs in an entry way',<br>
+                        <br>&nbsp;2. 'girl going into wooden building',<br>
+                        <br>&nbsp;3. 'little girl climbing into wooden playhouse',<br>
+                        <br>&nbsp;4. 'little girl climbing the stairs to her playhouse',<br>
+                        <br>&nbsp;5. 'little girl in pink dress going into wooden cabin'
+                      </span>
+                      <br></b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="u-text u-text-default u-text-7">We divide the entire dataset into a training set which has 6000 images and a testing set which has 1000 images.&nbsp;</p>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-3" id="sec-2abe">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1"><b>Algorithms&nbsp;</b>
+        </h1>
+        <h2 class="u-text u-text-default u-text-2"><b>InceptionV3 (for images)</b>
+        </h2>
+        <p class="u-text u-text-default u-text-3">
+          <span style="font-size: 1.5rem;">A Convolutional Neural Network (CNN)&nbsp; is an algorithm that represents the culmination of advancements in Computer Vision within Deep Learning. Its main purpose is to take objects in an image, and assign values to it. &nbsp;Fig below shows the architecture of a CNN which has 3 layers: convolution, pooling and fully connected layers where&nbsp;<br>
+          </span>
+          <br>
+          <span style="font-size: 1.5rem;">1. Convolution layer- In this layer, filters are applied to extract features from images. The most important parameters are the size of the kernel and stride.<br>
+          </span>
+          <br>
+          <span style="font-size: 1.5rem;">2. Pooling layer- Its function is to reduce the spatial size to reduce the number of parameters and computation in a network.<br>
+          </span>
+          <br>
+          <span style="font-size: 1.5rem;">3. Fully Connected layer - These are fully connected connections to the previous layers as in a simple neural network.</span>
+          <br>
+        </p>
+        <img class="u-image u-image-default u-image-1"
+             
+             src="{{ url_for('static', filename='images/ScreenShot2022-03-19at4.28.27PM.png')}}"
+              alt="" data-image-width="1490" data-image-height="634">
+        <p class="u-text u-text-default u-text-4">It is very hard to build an optimal CNN so we consider some pre-trained models such as ResNet50, VGG16, DenseNet121, inception v3. In comparison to VGGNet, Inception Networks (GoogLeNet/Inception v1) have proved to be more computationally efficient, both in terms of the number of parameters generated by the network and the economical cost incurred (memory and other resources). Therefore we chose inception v3 for this project. Figure below shows the architecture of full inceptionV3. For our purpose, we removed the last 2 layers of the full inception V3 network, therefore, there are 312 layers in our model.&nbsp;</p>
+        <img class="u-image u-image-default u-image-2" 
+             
+             src="{{ url_for('static', filename='images/ScreenShot2022-03-19at4.31.05PM.png')}}"
+              alt="" data-image-width="1446" data-image-height="592">
+        <h2 class="u-text u-text-default u-text-5"><b>LSTM (for text)</b>
+        </h2>
+        <p class="u-text u-text-default u-text-6">A recurrent neural network (RNN) composed of Long short-term memory (LSTM) units is often called an LSTM network. A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. Intuitively, they can be thought as regulators of the flow of values that goes through the connections of the LSTM; hence the denotation “gate”. There are connections between these gates and the cell. See Figure below.&nbsp;</p>
+        <img class="u-image u-image-default u-image-3" 
+             src="{{ url_for('static', filename='images/ScreenShot2022-03-19at4.34.02PM.png')}}"
+            alt="" data-image-width="1358" data-image-height="782">
+        <p class="u-text u-text-default u-text-7">The expression long short-term refers to the fact that LSTM is a model for the short-term memory which can last for a long period of time. LSTMs were developed to deal with the exploding and vanishing gradient problem when training traditional RNNs.&nbsp;<br>
+          <br>For a Bidirectional LSTM, the inputs will run two ways by duplicating the first recurrent layer in the network so that there are now two layers side-by-side. The input sequence is provided as an input to the first layer and the reversed copy of that is provided to the second layer. Though this drastically increases the number of parameters, it also increases the accuracy of the model.
+        </p>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-4" id="sec-0280">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1"><b>Data-cleaning and preparation&nbsp;</b>
+        </h1>
+        <p class="u-text u-text-default u-text-2">
+          <span style="font-size: 1.5rem;">The data for flickr8k is divided into two folders. One folder with images and one with captions. The first step is to map these to each other. We created a dictionary with the images as keys and their value is a set of 5 captions.&nbsp;Since Inception-v3 requires the input images to be in a shape of 299 x 299 x 3, we convert each image into 299x299x3 pixel representation.&nbsp;<br>
+            <br>There are 6000 images for training, and each image has 5 captions. Therefore there are 6000x5 = 30,000 captions for training. We consider only words which occur at least 10 times in the corpus, therefore we reduce the vocabulary size from 7576 to 1651. For word-embedding, we used GloVe to convert words into vectors, and we found 400,000 word vectors.&nbsp;<br>
+            <br>Once the preprocessing is complete, data is fed to 2 parallel components in the architecture. The diagram depicts the 2 parallel phases of the model.&nbsp;<br>
+            <br>The processed input images are passed through the InceptionV3 model. This step is to extract features from the image. The final dense layers with ‘softmax’ functions are dropped from both the models since we do not intend to classify the images. The output from the models is in the form of a flattened array. The InceptionV3 model gives the output features with shape (1, 2048).&nbsp;<br>
+            <br>Parallelly, the caption data for the training images is fed to the RNN (LSTM). This model takes data from the captions with respect to the words used and their frequency.<br>
+            <br>The output from both these parallel models is fed to a decoder. The decoder then maps image features to information extracted by the LSTM. Thus, features in images are associated with words in captions to train the model.<b>
+              <br></b>
+            <br>Our approach to deploying these components is summarized in Figure below.&nbsp;
+          </span>
+          <br>
+        </p>
+        <img class="u-image u-image-default u-image-1" 
+             
+             src="{{ url_for('static', filename='images/ScreenShot2022-03-19at4.37.36PM.png')}}"
+              alt="" data-image-width="1166" data-image-height="572">
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-5" id="sec-1916">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1"><b>Evaluation of the model</b>
+        </h1>
+        <p class="u-text u-text-default u-text-2">To quantifiably measure the accuracy of the models, we will be using the BLEU (bilingual evaluation understudy) score. BLEU was originally developed to assess performance with language translation problems. The primary task for a BLEU implementer is to compare n-grams of the candidate with the n-grams of the reference translation and count the number of matches. These matches are position-independent. The more matches, the better the candidate translation is.&nbsp;<br>
+          <br>The Flickr-8k dataset, after preprocessing, provides data in the form of a dictionary where the key is an image and the value for that image is a set of 5 captions. The BLEU metric is used to compare the predicted caption from the model to all the given caption labels. The best match from all these labels is picked as the final BLEU score.&nbsp;
+        </p>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-section-6" id="sec-74f9">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-text-1">The Team</h1>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <div alt="" class="u-image u-image-circle u-image-1" src="" data-image-width="702" data-image-height="820"></div>
+                <h5 class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-2">Arnav Gattu</h5>
+                <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-3">Creator</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <div alt="" class="u-image u-image-circle u-image-2" src="" data-image-width="600" data-image-height="600"></div>
+                <h5 class="u-text u-text-4">Stella Dong</h5>
+                <p class="u-text u-text-5">Instructor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+                   <!--     javascript added for uploading a photo    -->
+    <script>
+        // added to get upload with a button working
+        document.getElementById('seefood_button').addEventListener('click', openDialog);
+
+        function openDialog() {
+            document.getElementById('seefood_input_field').click();
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#spinner").bind("ajaxSend", function() {
+                $(this).show();
+            }).bind("ajaxStop", function() {
+                $(this).hide();
+            }).bind("ajaxError", function() {
+                $(this).hide();
+            });
+            // seefood_input_field
+            $('#seefood_button').click(function() {
+
+            });
+
+        });
+    </script>
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-28ff"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Learn AI at AI Camp!</p>
+      </div></footer>
+  </body>
+</html>
